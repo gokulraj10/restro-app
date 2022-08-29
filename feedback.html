@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>feedback</title>
+  <style>
+  *{
+    padding:0;
+    margin:0;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+font-weight: 400;
+  }
+  .container{
+    width:50%;
+    padding:20px;
+    color: #e9ecef;
+    border:px white;
+    border-radius: 50%;
+  }
+  .text-center {
+  text-align: center;
+}
+div { margin: 0 auto; }
+  input[type=email], input[type=text]{
+         width: 100%;
+         margin: 8px 0;
+         padding: 12px 20px;
+         display: inline-block;
+         border: 2px solid green;
+         background-color: #bcb8b1;
+         box-sizing: border-box;
+         border-radius: 25px;
+     }
+     button:hover {
+            opacity: 0.7;
+        }
+        button {
+               background-color: #4CAF50;
+               width: 100%;
+                color: white;
+                padding: 15px;
+                margin: 10px 0px;
+                border: none;
+                cursor: pointer;
+                border-radius: 25px;
+                 }
+
+          label {
+    display:block;
+}
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.5);
+}
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url('res.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+form {
+  background: var(--color-darkblue-alpha);
+  padding: 2.5rem 1.5rem;
+  border-radius: 1rem;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+h1{
+  color:white;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  font-family: Times new roman;
+}
+.container:hover{
+  transform: scale(1.05);
+  transition: transform 1000ms ease-out;
+}
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.top{
+  padding-left:40px;
+  color: white;
+  background-color: rgba(27, 27, 50, 0.8);
+  font-size: 25px;
+  font-family: Times new roman;
+}
+.right{
+  float:right;
+}
+.left{
+  float:left;
+}
+#left{
+  float:left;
+}
+#right{
+  float:right;
+}
+  </style>
+
+
+</title>
+</head>
+<body>
+  <div class="top">
+    <h2>RESTRO</h2>
+    <p>
+      Restaurant Recommandation App
+    </p>
+  </div>
+<div class="topnav">
+  <a class="left" href="C:\Users\HP\OneDrive\Desktop\web\HTML personal file\lab\project\index.html">Home</a>
+    <a class="left" href="C:\Users\HP\OneDrive\Desktop\web\HTML personal file\lab\project\recommendations.html">Recommendation</a>
+  <a class="left" href="C:\Users\HP\OneDrive\Desktop\web\HTML personal file\lab\project\math.html">Mathematical background</a>
+  <a class="left" href="C:\Users\HP\OneDrive\Desktop\web\HTML personal file\lab\project\aboutus.html">About us</a>
+  <a class="active" id="left" href="C:\Users\HP\OneDrive\Desktop\web\HTML personal file\lab\project\feedback.html">Feedback</a>
+  <a class="right" href="C:\Users\HP\OneDrive\Desktop\web\HTML personal file\lab\project\login.html">Login</a>
+  <a class="right" href="C:\Users\HP\OneDrive\Desktop\web\HTML personal file\lab\project\signup.html">Sign up</a></a>
+</div>
+  <header class="header">
+    <h1 id="title" class="text-center"><center>
+      Feedback Form
+    </center></h1>
+  </header>
+  <div class="container">
+  <form id="survey-form" method="post">
+    <div class="form-group">
+      <label id="name-label" for="name">1. Name<br /></label>
+      <input type="text" name="name" id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+      <br />
+    <div class="form-group">
+      <label id="email-label" for="email">2. Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+<br />
+    <div class="form-group">
+      <label id="number-label"
+        >3. Gender</label>
+      <input
+        type="radio"
+        name="Gender"
+        value="Male" class="input-radio">Male
+      <input type="radio" name="Gender" value="Female" class="input-radio">Female</div>
+<br />
+    <div class="form-group">
+     <label for="rating">4. Rate our Restaurant Recommandation App</label>
+     <label>
+       <input type="radio" name="rat1" value="1" class="input-radio">Excellent</label>
+     <label><input type="radio" name="rat2" value="2" class="input-radio">Very Good</label>
+     <label><input type="radio" name="rat3" value="3" class="input-radio">Good</label>
+     <label><input type="radio" name="rat4" value="4" class="input-radio">Neutral</label>
+     <label><input type="radio" name="rat5" value="5" class="input-radio">Need to be improved</label>
+   </div>
+<br />
+   <div class="form-group">
+      <label >5. Would you recommend our app to your friends?</label>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+        />Definitely</label>
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label>
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure</label>
+    </div>
+<br />
+    <div class="form-group">
+      <label >6. What is your favorite feature of our Restaurant Recommandation App?</label>
+      <label>
+        <input
+          name="prefer"
+          value="Food"
+          type="checkbox"
+          class="input-checkbox"/>List of Restaurants</label>
+          <label><input
+            name="prefer"
+            value="Food"
+            type="checkbox"
+            class="input-checkbox"/>Reviews</label>
+          <label><input
+              name="prefer"
+              value="Food"
+              type="checkbox"
+              class="input-checkbox"/>Recommandations</label>
+          <label><input
+                name="prefer"
+                value="Food"
+                type="checkbox"
+                class="input-checkbox"/>Offer Details</label>
+                <label><input
+                      name="prefer"
+                      value="Food"
+                      type="checkbox"
+                      class="input-checkbox"/>Categories</label>
+    </div>
+<br />
+  <div class="form-group">
+    <label >7. Any comments or suggestions?</label>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+    <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </div>
+</form>
+</body>
+</html>
