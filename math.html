@@ -73,6 +73,45 @@ body::before {
 #right{
   float:right;
 }
+  body{
+       background-color: rgb(230, 224, 224);
+   }
+
+   #left_container{
+       color:white;
+       background-color: rgba(27, 27, 50, 0.6);
+       border-radius: 4px;
+       height: 70%;
+       width:33%;
+       margin: 7% 4% 5% 7%;
+       float: left;
+       padding: 2%;
+   }
+
+   #left_container p{
+       margin: 5% 0 1%;
+   }
+
+   #right_container{
+     color:white;
+     background-color: rgba(27, 27, 50, 0.6);
+       height: 70%;
+       border-radius: 4px;
+       width:33%;
+       margin: 7% 4% 5% 7%;
+       float: right;
+       padding: 2%;
+   }
+   #left_container li
+   {
+       margin: 0.5%;
+   }
+
+   .container:hover{
+       transform: scale(1.02);
+       transition: transform 1200ms ease-out;
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   }
 </style>
 </head>
 <body>
@@ -91,7 +130,22 @@ body::before {
   <a class="right" href="login.html">Login</a>
   <a class="right" href="signup.html">Sign up</a></a>
 </div>
-
+<div class="container" id="left_container">
+      <h2>COSINE SIMILARITY</h2>
+      <p>Cosine similarity is a metric, helpful in determining, how similar the data objects are irrespective of their size. We can measure the similarity between two sentences in Python using Cosine Similarity. In cosine similarity, data objects in a dataset are treated as a vector.</p><br>
+<p>For example, in information retrieval and text mining, each word is assigned a different coordinate and a document is represented by the vector of the numbers of occurrences of each word in the document. Cosine similarity then gives a useful measure of how similar two documents are likely to be, in terms of their subject matter, and independently of the length of the documents.
+The technique is also used to measure cohesion within clusters in the field of data mining.</p><br>
+<p>One advantage of cosine similarity is its low complexity, especially for sparse vectors: only the non-zero coordinates need to be considered.
+</p>
+  </div>
+  <div style="width: 3px;height: 77%;border-right:1px black solid;display: inline;float: left;margin:7% 0 0 2%"></div>
+  <div class="container" id="right_container">
+    <h2>Formula</h2>
+    <br>
+<span>Cos(&#120;,&#121;)=&ensp;&#120;.&#121;&ensp;&#8725;&ensp;&ensp;&#8739;&#8739;&ensp;&#120;&ensp;&#8739;&#8739;&ensp;&#8727;&ensp;&#8739;&#8739;&ensp;&#121;&ensp;&#8739;&#8739;</span>
+<br><br>
+<img src="https://storage.googleapis.com/lds-media/images/cosine-similarity-vectors.original.jpg" alt="Cosine similarity" width="510" height="200">
+  </div>
 
 </body>
 </html>
